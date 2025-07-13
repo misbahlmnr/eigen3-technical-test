@@ -1,0 +1,106 @@
+@use "../../../styles/variables" as *;
+
+.header {
+  background-color: $color-bg;
+
+  .container {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .left-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      height: 100%;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: black;
+
+        svg {
+          width: 20px;
+          fill: white;
+          stroke: white;
+        }
+
+        h1 {
+          font-size: 1rem;
+          font-family: "Newsreader";
+        }
+      }
+
+      .ant-menu {
+        background: transparent;
+
+        a {
+          font-family: $font-primary;
+        }
+      }
+    }
+
+    .right-box {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .mobile-search-icon,
+      .mobile-menu-icon {
+        background: none;
+        border: none;
+        color: black;
+      }
+
+      .form-search {
+        padding: 8px;
+        height: 40px;
+        background-color: #f2f2f5;
+        display: flex;
+        align-items: center;
+        border: none;
+
+        svg {
+          stroke: #6b7582;
+        }
+
+        input {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .mobile-search-bar {
+    width: 100%;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    &.active {
+      max-height: 60px;
+      opacity: 1;
+      margin-top: 0.5rem;
+    }
+
+    .form-search {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .mobile-search-bar {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 0 20px;
+  }
+}

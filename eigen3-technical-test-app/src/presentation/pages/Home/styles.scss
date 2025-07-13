@@ -1,0 +1,26 @@
+@use "../../../styles/variables" as *;
+
+.hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .hero-title {
+    font-size: $font-size-5xl;
+    font-weight: bold;
+  }
+
+  .hero-subtitle {
+    font-size: $font-size-2xl;
+  }
+}
+
+.article-section {
+  padding: 2rem 0;
+
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary !important;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.ant-layout {
+  background-color: $color-bg;
+}
+
+.ant-typography,
+.ant-btn,
+.ant-menu,
+.ant-layout,
+.ant-input,
+.ant-table,
+.ant-pagination-item a {
+  font-family: $font-primary !important;
+}

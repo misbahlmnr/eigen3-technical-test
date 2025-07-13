@@ -1,0 +1,18 @@
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  .ant-pagination-item {
+    border-radius: 50%;
+  }
+  .ant-pagination-item-active {
+    border: none;
+    background-color: #f2f2f5;
+
+    a {
+      color: black;
+    }
+  }
+}
